@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Burger Menu Example</title>
+	<style>
+		/* Basic styles */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		button {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			padding: 10px;
+			background-color: transparent;
+			border: none;
+			color: #000;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.menu {
+			position: fixed;
+			top: 0;
+			right: 0%;
+/* -50 */
+            top: 100%;
+			width: 50%;
+			height: 100%;
+			background-color: #000;
+			transition: all 1s ease-in-out;
+			z-index: 9999;
+		}
+		.show {
+            top: 0%;
+            
+		}
+		.menu ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+		.menu li {
+			margin-bottom: 20px;
+			color: #fff;
+			font-size: 24px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<button id="toggle-menu">Click me</button>
+	<div class="menu" id="menu">
+		<ul>
+			<li>Element 1</li>
+			<li>Element 2</li>
+			<li>Element 3</li>
+			<li>Element 4</li>
+			<li>Element 5</li>
+		</ul>
+	</div>
+	<script>
+		const toggleMenuBtn = document.getElementById('toggle-menu');
+		const menu = document.getElementById('menu');
+		
+		toggleMenuBtn.addEventListener('click', () => {
+			menu.classList.toggle('show');
+		});
+	</script>
+</body>
+</html>

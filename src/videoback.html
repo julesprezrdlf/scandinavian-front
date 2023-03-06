@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Background with Overlaid White Background</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.white-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 60%;
+			height: 100%;
+			background-color: white;
+			z-index: 1;
+		}
+
+		.video-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="white-background"></div>
+	<video class="video-background" autoplay muted loop>
+		<source src="https://vod-bgc-eu-west-1.media.dssott.com/bgui/ps01/disney/bgui/2019/08/01/1564676115-marvel.mp4" type="video/mp4">
+	</video>
+</body>
+</html>

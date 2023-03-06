@@ -1,0 +1,31 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+ h1{
+    color: #000; 
+    font-size: 160px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+
+} 
+
+
+.iceland-container{
+
+    display: grid;
+ /* Set the height of the container to 100% of the viewport height */
+ height: 100vh;  
+  justify-items: center;
+  align-items: center;
+}
