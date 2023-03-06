@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>App</title>
+    <style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+        #menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+  
+    }
+
+    #parallax-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+
+       
+    }
+
+    #animated-background{
+       
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+      
+       
+    }
+	</style>
+
+</head>
+<body>
+	<object data="components/menuComponent/menuComponent.html" id="menu"></object>
+    <object data="components/parallaxHeaderComponent/parallaxHeaderComponent.html" id="parallax-header"></object>
+    <object data="components/animatedBackgroundComponent/animatedBackgroundComponent.html" id="animated-background"></object>
+	<script src="app.js"></script>
+</body>
+</html>
